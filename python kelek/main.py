@@ -65,8 +65,6 @@ def main():
 
 
 def rerata():
-     # data_mhs = input('Masukan nama mahasiswa : ')
-     
      # mengubah dictionary menjadi list
      tabungan_list = list(tabungan_dict)
 
@@ -76,11 +74,10 @@ def rerata():
      
      # Mencari nama mahasiswa yang sama 
      for i in  tabungan_list:
-          # if data_mhs == get_nilai[i]['nama']:
                total = get_nilai[i]['tabungan minggu ke-1']+get_nilai[i]['tabungan minggu ke-2']+get_nilai[i]['tabungan minggu ke-3']+get_nilai[i]['tabungan minggu ke-4']
                avg = total/4
                tabungan_dict[i]['Rata-rata'] = avg
-               # print(f'Rata rata tabungan {get_nilai[i]["nama"]} dalam empat minggu adalah {avg} USD')
+               
      
      return avg
 
@@ -98,7 +95,7 @@ def tampil_terbanyak():
           total = get_nilai[i]['tabungan minggu ke-1']+get_nilai[i]['tabungan minggu ke-2']+get_nilai[i]['tabungan minggu ke-3']+get_nilai[i]['tabungan minggu ke-4']
           if total > max :
                max = total    
-     print(f'Tabungan Mahasiswa terbanyak daam empat minggu adalah milik {get_nilai[i]["nama"]} sebesar {max} USD ') 
+     print(f'Tabungan Mahasiswa terbanyak dalam empat minggu adalah milik {get_nilai[i]["nama"]} sebesar {max} USD ') 
      return max
 
      
