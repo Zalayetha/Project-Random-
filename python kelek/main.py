@@ -1,7 +1,3 @@
-from ast import Return
-from tkinter.messagebox import RETRY
-
-
 tabungan_dict = {
      0:{
           'nama':'Aradea',
