@@ -102,8 +102,5 @@ def tampil_terbanyak():
      return max
 
      
-
-
-
-
-main()
+if __name__ == "__main__" :
+     main()
