@@ -1,7 +1,6 @@
 # Fungsi Enkripsi
 def encryption(unencrypt_string):
      global output_trnslt
-     # translate = []
      encrypt_trnslt = ''
      for i in unencrypt_string:
           chip = ord(i)-96
@@ -10,16 +9,12 @@ def encryption(unencrypt_string):
               encrypt_trnslt += str(chip)
           if chip % 3 == 0:
                encrypt_trnslt += i
-               # for n in translate :
-                    # encrypt_trnslt += n
-                    # print(encrypt_trnslt)
      print(f'Pesan yang sudah di enkripsi : {encrypt_trnslt}')
 
 # YANG FUNGSI DECRYPT MASIH ADA BUG NYA 
 def decrypt(encrypt_string):
      unencrypt_trnslt = ''
      for i in encrypt_string:
-          # convert_int = int(i)
           if i.isnumeric():
                convert_int = int(i)
                decrypt_chip = chr(convert_int+96)
